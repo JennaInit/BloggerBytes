@@ -11,7 +11,8 @@
 <header id="site-header">
     
 <?php if ( get_header_image() ) : ?>
-<div class="header-image" style="background-image: url(<?php header_image(); ?>);background-size:cover;height:100%;width:100%;margin-top:-4em;margin-bottom:4em;"></div>
+<div class="header-image" style="background-image: url(<?php header_image(); ?>);
+background-size:cover;height:100%;width:100%;margin-top:-4em;margin-bottom:4em;"></div>
 <?php endif; ?>
 
 <div id="wrap-inside-header">
@@ -26,9 +27,9 @@ if ( has_custom_logo() ) {
 ?>
 </div>
 
-            <h1><?php bloginfo('name');?></h1>
+    <h1><?php bloginfo('name');?></h1>
 </header>
 
-    <nav id="top-navi">
+<nav id="top-navi">
         <?php wp_nav_menu(['theme_location' => 'primary'])?>
-    </nav>
+</nav>
