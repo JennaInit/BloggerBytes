@@ -48,6 +48,9 @@ font-family: "Saira", serif;
 
 h3{font-family: "Saira", serif;}
 
+/*Centering image captions*/
+.wp-block-image :where(figcaption) {text-align:center;}
+
 /*HEADER*/
 
 #site-header h1{
@@ -143,7 +146,8 @@ color: #4200a7;
 font-size: 1.1em;
 }
 
-:where(.wp-block-columns) {margin-bottom: 0em;} /*Null This If You want to Display Comments with No Gaps*/
+:where(.wp-block-columns) {margin-bottom: 0em;}
+/*Null This If You want to Display Comments with No Gaps*/
 .wp-block-comment-template li{
 border-bottom: 2px solid #e7c7ff6b;
 border-top: 2px solid #e7c7ff6b;
@@ -210,7 +214,7 @@ padding: 0;
 }
 
 /*Following structure must be inside sidebar -div*/
-#content #sidebar > div:first-child > h1, #content #sidebar > div:first-child > h2{
+#content #sidebar > div:first-child > h1, #content #sidebar > div:first-child h2{
 margin-top: 5px;
 }
 
@@ -237,6 +241,9 @@ padding-right: 2em;
 margin-top: 2em;
 margin-bottom: 2em;
 }
+
+/*Youtube iFrame to fullwidth regarding to content*/
+.wp-block-embed iframe{width:100%;}
 
 #sidebar{width: 340px; padding: 0 0.8em;background-color: #110525f0;padding-top: 1.2em;}
 #sidebar div{background-color:#18012596;margin-top: 0.5em;}
